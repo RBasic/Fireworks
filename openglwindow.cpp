@@ -89,6 +89,7 @@ void OpenGLWindow::renderNow()
     render();
 
     m_context->swapBuffers(this);
+    glFlush();
 
     if (m_animating)
         renderLater();

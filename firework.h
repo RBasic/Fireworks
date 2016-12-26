@@ -5,14 +5,18 @@
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
+#include <QSoundEffect>
 
 const GLint SCREEN_WIDTH = 800;
 const GLint SCREEN_HEIGHT = 600;
-const GLint SCREEN_BPP = 32;
-const int FIREWORKS = 50;           // Number of fireworks
-const int FIREWORK_PARTICLES = 100;  // Number of particles per firework
-using namespace std;
+const int FIREWORKS = 6;
+const int FIREWORKS2 = 0;//5;
+const int FIREWORK_PARTICLES = 50;
+const int FIREWORK_PARTICLES2 = 15;
+const bool BACKGROUND = true;
 
+
+using namespace std;
 
 class Firework
 {
@@ -31,7 +35,7 @@ class Firework
 
         GLfloat particleSize;
         GLboolean hasExploded;
-
+        QSoundEffect effect;
         static const GLfloat baselineYSpeed;
         static const GLfloat maxYSpeed;
 

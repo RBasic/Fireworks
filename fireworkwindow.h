@@ -20,7 +20,6 @@ private:
     GLuint m_matrixUniform;
 
     QOpenGLShaderProgram *m_program;
-    int m_frame;
 };
 
 #endif // FIREWORKWINDOW_H

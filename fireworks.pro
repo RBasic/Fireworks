@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT += multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,9 +20,11 @@ LIBS += -lOpenGL32
 SOURCES += main.cpp\
     firework.cpp \
     openglwindow.cpp \
-    fireworkwindow.cpp
+    fireworkwindow.cpp \
+    firework2.cpp
 
 HEADERS  += \
     firework.h \
     openglwindow.h \
-    fireworkwindow.h
+    fireworkwindow.h \
+    firework2.h
